@@ -1,6 +1,6 @@
 {
   "name": "pixel2rem",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Simple convert px to rem using NPX",
   "main": "index.js",
   "scripts": {
