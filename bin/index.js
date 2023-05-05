@@ -8,8 +8,8 @@ if (args.length < 1) {
   process.exit(1); //an error occurred
 }
 const [toConvert, pixelValue = defaultPx] = args;
-const value = `${((1 / pixelValue) * toConvert).toFixed(4)}rem`;
+let value = parseFloat(((1 / pixelValue) * toConvert).toFixed(10));
 
-console.log(`\x1b[32m ${value} \x1b[0m`); // Output it in green
+console.log(`\x1b[32m ${value % 1 != 0 ? value : value}rem \x1b[0m`); // Output it in green
 
 process.exit(0); //no errors occurred
